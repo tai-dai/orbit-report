@@ -1,0 +1,40 @@
+.sortable {
+    cursor: pointer;
+    color: #dd5;
+}
+
+.warning {
+    background-color: #da8a8a;
+    animation:blinkingText 1.8s infinite;
+}
+table {
+  color: rgb(224, 222, 224);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 12px 0;
+  min-width: 300px;
+  background: #928e8f;
+}
+
+.header-row {
+    background: #737a78;
+    color: #fff
+}
+
+th, td, #noWarning {
+    text-align: left;
+    margin: 5px 10px;
+    padding: 6px;
+}
+
+tr:nth-child(even) {
+    background-color: #a5a0a1;
+  }
+
+@keyframes blinkingText{
+    0%   { color: rgb(224, 222, 224); }
+    49%  { color: rgb(224, 222, 224); }
+    60%  { color: transparent; }
+    99%  { color: transparent; }
+    100% { color: rgb(224, 222, 224); }
+}
